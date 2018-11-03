@@ -1,2 +1,18 @@
-<h1>Stocker</h1>
-<p>Hello World!!</p>
+<%= form_tag home_index_path, :method=>"post" do %>
+  <%= text_field_tag 'id', nil, placeholder:'Enter Company name',size:50 %>
+  <%= submit_tag 'Submit' %>
+<% end %>
+
+<br/>
+
+
+<% if @stock %>
+<%= @stock.inspect %>
+<% elsif @nothing %>
+<%= @nothing %>
+<% end %>
+
+<% if @error %>
+<%= @error %>
+<% end %>
+
