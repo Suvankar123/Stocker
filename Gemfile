@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.4.1'
+ruby '2.3.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.1'
@@ -13,6 +13,8 @@ gem 'puma', '~> 3.11'
 gem 'sass-rails', '~> 5.0'
 #gem for stylesheet
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
+#gem file for ruby-maven
+gem 'ruby-maven', '~> 3.3', '>= 3.3.10'
 #gem for stock information
 gem 'stock_quote', '~> 2.0'
 #gem install devise
